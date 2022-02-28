@@ -20,9 +20,9 @@ return new class extends Migration
             $table->integer('prix');
             $table->string('slug');
             $table->boolean('coup_de_coeur');
-            $table->text('color_list');
-            $table->string('image');
-            $table->integer('promotion');
+            $table->text('color_list')->nullable();
+            $table->string('image')->nullable();
+            $table->integer('promotion')->nullable();
             $table->timestamps();
         });
     }
