@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('products')->insert([
-            'name' => Str::random(),
-            'description' => Str::random(),
+            'name' => Str::random(5), 
+            'description' => Str::random(20),
             'prix' => rand(1, 20),
-            'slug' => Str::random(),
+            'slug' => Str::random(5),
             'coup_de_coeur' => (bool) rand(0, 1),
             'created_at' => now(),
             'updated_at' => now(),

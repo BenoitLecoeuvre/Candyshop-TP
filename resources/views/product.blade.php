@@ -14,7 +14,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-                    <li class="breadcrumb-item"><a href="category.html">Catégorie</a></li>
+                    <li class="breadcrumb-item"><a href="categories">Catégorie</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Produit</li>
                 </ol>
             </nav>
