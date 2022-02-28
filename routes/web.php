@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,5 @@ Route::get('/', function () {
 
 Route::get('/produits', [ProductController::class, 'index']);
 Route::get('/produits/{product}', [ProductController::class, 'show']);
+
+Route::get('/contact', [ContactController::class, 'index']);

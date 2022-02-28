@@ -74,7 +74,7 @@
                             <p class="btn btn-danger w-100">99,00 &euro;</p>
                         </div>
                         <div class="col">
-                            <a href="product.html" class="btn btn-success w-100">Voir</a>
+                            <a href="product" class="btn btn-success w-100">Voir</a>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="card">
                         <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                            <h4 class="card-title"><a href="product" title="View Product">Produit</a></h4>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="row">
                                 <div class="col">
@@ -103,7 +103,7 @@
                     <div class="card">
                         <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                            <h4 class="card-title"><a href="product" title="View Product">Produit</a></h4>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="row">
                                 <div class="col">
@@ -120,7 +120,7 @@
                     <div class="card">
                         <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                            <h4 class="card-title"><a href="product" title="View Product">Produit</a></h4>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="row">
                                 <div class="col">
@@ -137,7 +137,7 @@
                     <div class="card">
                         <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                            <h4 class="card-title"><a href="product" title="View Product">Produit</a></h4>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="row">
                                 <div class="col">
@@ -154,7 +154,7 @@
                     <div class="card">
                         <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                            <h4 class="card-title"><a href="product" title="View Product">Produit</a></h4>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="row">
                                 <div class="col">
@@ -171,7 +171,7 @@
                     <div class="card">
                         <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                            <h4 class="card-title"><a href="product" title="View Product">Produit</a></h4>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="row">
                                 <div class="col">
