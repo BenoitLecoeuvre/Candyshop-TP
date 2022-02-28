@@ -3,8 +3,8 @@
 @section('content')
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading">Produit</h1>
-        <p class="lead text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro commodi aliquam veniam fuga suscipit itaque labore natus accusamus numquam, perferendis in? Incidunt libero dignissimos unde fuga voluptatem omnis accusamus delectus.</p>
+        <h1 class="jumbotron-heading">{{ $product->name }}</h1>
+        <p class="lead text-muted mb-0">{{ $product->description }}</p>
     </div>
 </section>
 
@@ -40,7 +40,7 @@
         <div class="col-12 col-lg-6 add_to_cart_block">
             <div class="card bg-light mb-3">
                 <div class="card-body">
-                    <p class="price">99,00 &euro;</p>
+                    <p class="price">{{ $product->prix }} &euro;</p>
                     <p class="price_discounted">149.90 &euro;</p>
                     <form method="get" action="cart.html">
                         <div class="mb-3">
