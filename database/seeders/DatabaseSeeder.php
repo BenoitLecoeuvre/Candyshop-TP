@@ -25,6 +25,10 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        DB::table('categories')->insert([
+            'name' => Str::random(5), 
+        ]);
         // \App\Models\User::factory(10)->create();
     }
 }

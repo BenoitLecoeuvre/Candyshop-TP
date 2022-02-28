@@ -23,6 +23,7 @@ return new class extends Migration
             $table->text('color_list')->nullable();
             $table->string('image')->nullable();
             $table->integer('promotion')->nullable();
+            $table->foreignId('category_id')->nullable()->constrained();
             $table->timestamps();
         });
     }
