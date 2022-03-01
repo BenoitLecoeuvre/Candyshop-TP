@@ -39,13 +39,13 @@
                 <div class="card-header bg-success text-white text-uppercase">
                     <i class="fa fa-heart"></i> Coup de coeur
                 </div>
-                <img class="img-fluid border-0" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                <img class="img-fluid border-0" src="{{ $bestproduct->image}}" alt="Card image cap">
                 <div class="card-body">
-                    <h4 class="card-title text-center"><a href="product.html" title="View Product">Produit</a></h4>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <h4 class="card-title text-center"><a href="product.html" title="View Product">{{ $bestproduct->name }}</a></h4>
+                    <p class="card-text">{{ $bestproduct-> description }}</p>
                     <div class="row">
                         <div class="col">
-                            <p class="btn btn-danger w-100">99,00 &euro;</p>
+                            <p class="btn btn-danger w-100">{{ $bestproduct->prix }} &euro;</p>
                         </div>
                         <div class="col">
                             <a href="product.html" class="btn btn-success w-100">Voir</a>

@@ -14,7 +14,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-                    <li class="breadcrumb-item"><a href="categories">Catégorie</a></li>
+                    <li class="breadcrumb-item"><a href="./categories">Catégorie</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Produit</li>
                 </ol>
             </nav>
@@ -28,10 +28,10 @@
         <div class="col-12 col-lg-6">
             <div class="card bg-light mb-3">
                 <div class="card-body">
-                    <a href="" data-toggle="modal" data-target="#productModal">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#productModal">
                         <img class="img-fluid" src="https://dummyimage.com/800x800/55595c/fff" />
                         <p class="text-center">Zoom</p>
-                    </a>
+                        </a>
                 </div>
             </div>
         </div>
@@ -177,5 +177,25 @@
         </div>
     </div>
 </div>
+
+<!-- Modal image -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="productModalLabel">Produit</h5>
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <img class="img-fluid" src="https://dummyimage.com/1200x1200/55595c/fff" />
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    </div>
+    </div>
+   </div>
 @endsection
 
