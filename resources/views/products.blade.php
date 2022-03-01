@@ -53,18 +53,16 @@
                     </ul>
                 </form>
             </div>
-            @foreach ($categories as $category)
             <div class="card bg-light mb-3">
                 <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Catégories</div>
                 <ul class="list-group category_block">
-                    <li class="list-group-item"><a href="/categories/{{ $category }}">Cras justo odio</a></li>
+                    <li class="list-group-item"><a href="/categories">Cras justo odio</a></li>
                     <li class="list-group-item"><a href="/categories">Dapibus ac facilisis in</a></li>
                     <li class="list-group-item"><a href="/categories">Morbi leo risus</a></li>
                     <li class="list-group-item"><a href="/categories">Porta ac consectetur ac</a></li>
                     <li class="list-group-item"><a href="/categories">Vestibulum at eros</a></li>
                 </ul>
             </div>
-            @endforeach
             <div class="card bg-light mb-3">
                 <div class="card-header bg-success text-white text-uppercase">Dernier produit</div>
                 <div class="card-body">
@@ -106,7 +104,9 @@
                 </div>
                 @endforeach
 
-                <div class="col-12">
+                {{ $products->links() }}
+
+            <!--<div class="col-12">
                     <nav aria-label="...">
                         <ul class="pagination">
                             <li class="page-item disabled">
@@ -122,7 +122,7 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
+                </div>-->
             </div>
         </div>
         
