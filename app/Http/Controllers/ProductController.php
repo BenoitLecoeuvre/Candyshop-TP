@@ -8,12 +8,13 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function index(Product $product)
+    public function index()
     {
         return view('products', [
-        'products' => Product::latest()->paginate(6)
+        'products' => Product::latest()->paginate(6),
+        'lastproduct' => Product::latest()->first(),
     ]);
-}
+    }
 
     public function show(Product $product)
     {
