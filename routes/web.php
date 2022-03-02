@@ -41,5 +41,6 @@ Route::get('/admin/produits', [AdminProductController::class, 'index']);
 Route::get('/admin/produits/creer', [AdminProductController::class, 'create']);
 Route::post('/admin/produits/creer', [AdminProductController::class, 'store']);
 
-Route::get('/admin/produits/1/modifier', [AdminProductController::class, 'edit']);
-Route::get('/admin/produits/1/supprimer', [AdminProductController::class, 'delete']);
+Route::get('/admin/produits/{id}/modifier', [AdminProductController::class, 'edit']);
+Route::put('/admin/produits/{id}', [AdminProductControllerController::class, 'update']);
+Route::get('/admin/produits/{id}/supprimer', [AdminProductController::class, 'delete']);

@@ -28,8 +28,8 @@
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->prix }}</td>
                                     <td>
-                                        <a class="btn btn-primary" href="/admin/produits/1/modifier">Modifier</a>
-                                        <a class="btn btn-danger" href="/admin/produits/1/supprimer">Supprimer</a>
+                                        <a class="btn btn-primary" href="/admin/produits/{{ $product->id }}/modifier">Modifier</a>
+                                        <a class="btn btn-danger" href="/admin/produits/{{ $product->id }}/supprimer">Supprimer</a>
                                     </td>
                                 </tr>
                                 @endforeach

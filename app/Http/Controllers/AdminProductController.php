@@ -10,7 +10,7 @@ class AdminProductController extends Controller
 {
     public function index() {
         return view("admin.admin-list", [
-            'products' => Product::all()
+            'products' => Product::all(),
         ]);
     }
 
@@ -19,6 +19,15 @@ class AdminProductController extends Controller
             'categories' => Category::all()
         ]);
     }
+
+    public function destroy(Product $product)
+    {   
+        $product->delete();
+
+        return redirect('/admin/produits')->with('status', 'Le produit '.$product->name.' a été supprimé.');
+    }
+
+
 
     public function store(Request $request)
     {
@@ -45,9 +54,28 @@ class AdminProductController extends Controller
         return redirect('admin/produits')->with('status', 'Le produit a été ajouté.');
     }
 
-    public function edit() {
-        return view("admin.edit");
+    public function edit(Product $product)
+    {
+        return view('admin.edit', [
+            'product' => $product,
+        ]);
     }
+
+    public function update(Request $request, Product $product)
+    {
+        // Vérifier les erreurs
+        request()->validate([
+            'name' => 'required|min:3',
+        ]);
+
+        // On modifie la catégorie dans la BDD
+        $product->update([
+            'name' => request('name'),
+        ]);
+
+        return redirect('/admin/produits')->with('status', 'Le produit '.$product->name.' a été modifié.');
+    }
+
 
     public function delete() {
         return view("admin.delete");
