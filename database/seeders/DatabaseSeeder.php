@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
 
         $this->faker = Faker::create();
         $name = Str::random(5);
+        $catname = Str::random(5);
 
         DB::table('products')->insert([
             'name' => $name,
@@ -35,7 +36,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('categories')->insert([
-            'name' => Str::random(5), 
+            'name' => $catname ,
+            'slug' => Str::slug($catname),
         ]);
         // \App\Models\User::factory(10)->create();
     }
