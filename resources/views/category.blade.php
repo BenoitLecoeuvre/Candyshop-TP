@@ -81,15 +81,16 @@
         </div>
         <div class="col">
             <div class="row">
+                @foreach ($category->products as $product)
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                        <img class="card-img-top" src="{{ $product->image }}" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h4 class="card-title"><a href="/produits/{{ $product->id }}-{{ $product->slug }}" title="View Product">{{ $product->name }}</a></h4>
+                            <p class="card-text">{{ $product->description }}</p>
                             <div class="row">
                                 <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
+                                    <p class="btn btn-danger w-100">{{ $product->prix}} &euro;</p>
                                 </div>
                                 <div class="col">
                                     <a href="#" class="btn btn-success w-100">Ajouter</a>
@@ -98,110 +99,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <nav aria-label="...">
-                        <ul class="pagination">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Précédent</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Suivant</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                @endforeach
+
             </div>
         </div>
+        
+        
 
     </div>
 </div>

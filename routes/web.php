@@ -32,3 +32,5 @@ Route::get('/produits/{product}', [ProductController::class, 'show']);
 Route::get('/categories/{category}', [CategoryController::class, 'show']);
 
 Route::get('/contact', [ContactController::class, 'index']);
+
+Route::get('/admin')

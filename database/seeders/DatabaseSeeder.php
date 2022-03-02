@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -24,6 +25,14 @@ class DatabaseSeeder extends Seeder
         $name = Str::random(5);
         $catname = Str::random(5);
 
+
+        DB::table('categories')->insert([
+            'name' => $catname ,
+            'slug' => Str::slug($catname),
+        ]);
+
+        $maxid = Category::latest('id')->first()->id;
+
         DB::table('products')->insert([
             'name' => $name,
             'description' => Str::random(20),
@@ -33,12 +42,10 @@ class DatabaseSeeder extends Seeder
             'image' => $this->faker->imageUrl(),
             'created_at' => now(),
             'updated_at' => now(),
+            'category_id' => rand(1, $maxid),
         ]);
 
-        DB::table('categories')->insert([
-            'name' => $catname ,
-            'slug' => Str::slug($catname),
-        ]);
+
         // \App\Models\User::factory(10)->create();
     }
 }
