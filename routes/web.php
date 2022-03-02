@@ -37,6 +37,9 @@ Route::get('/contact', [ContactController::class, 'index']);
 
 Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/admin/produits', [AdminProductController::class, 'index']);
+
 Route::get('/admin/produits/creer', [AdminProductController::class, 'create']);
+Route::post('/admin/produits/creer', [AdminProductController::class, 'store']);
+
 Route::get('/admin/produits/1/modifier', [AdminProductController::class, 'edit']);
 Route::get('/admin/produits/1/supprimer', [AdminProductController::class, 'delete']);

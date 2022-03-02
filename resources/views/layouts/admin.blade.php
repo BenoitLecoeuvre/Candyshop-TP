@@ -52,7 +52,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="admin/produits">
+                                <a class="nav-link" href="/admin/produits">
                                     <span data-feather="file"></span>
                                     Produits
                                 </a>
