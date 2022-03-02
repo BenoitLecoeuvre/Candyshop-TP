@@ -6,7 +6,7 @@
         <h1 class="h2">Dashboard</h1>
             </div>
                 <div>
-                    Bonjour Toto
+                    Supprimer
                 </div>
                 
             </div>
