@@ -20,7 +20,7 @@
                 <div class="carousel-inner">
                     @foreach ($randomproduct as $product)
                     <div class="carousel-item @if ($loop->first) active @endif">
-                        <img class="d-block w-100" src="{{ $product->image}}" alt="First slide">
+                        <a href="/produits/{{ $product->id }}-{{ $product->slug }}"><img class="d-block w-100" src="{{ $product->image}}" alt="First slide"></a>
                     </div>
                     @endforeach
                 </div>
@@ -41,14 +41,14 @@
                 </div>
                 <img class="img-fluid border-0" src="{{ $bestproduct->image}}" alt="Card image cap">
                 <div class="card-body">
-                    <h4 class="card-title text-center"><a href="product.html" title="View Product">{{ $bestproduct->name }}</a></h4>
+                    <h4 class="card-title text-center"><a href="produits/{{ $bestproduct->id }}-{{ $bestproduct->slug }}" title="View Product">{{ $bestproduct->name }}</a></h4>
                     <p class="card-text">{{ $bestproduct-> description }}</p>
                     <div class="row">
                         <div class="col">
                             <p class="btn btn-danger w-100">{{ $bestproduct->prix }} &euro;</p>
                         </div>
                         <div class="col">
-                            <a href="product.html" class="btn btn-success w-100">Voir</a>
+                            <a href="produits/{{ $bestproduct->id }}-{{ $bestproduct->slug }}" class="btn btn-success w-100">Voir</a>
                         </div>
                     </div>
                 </div>

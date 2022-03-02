@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Product;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -20,12 +21,13 @@ class DatabaseSeeder extends Seeder
     {
 
         $this->faker = Faker::create();
+        $name = Str::random(5);
 
         DB::table('products')->insert([
-            'name' => Str::random(5), 
+            'name' => $name,
             'description' => Str::random(20),
             'prix' => rand(1, 20),
-            'slug' => Str::random(5),
+            'slug' => Str::slug($name),
             'coup_de_coeur' => (bool) rand(0, 1),
             'image' => $this->faker->imageUrl(),
             'created_at' => now(),
